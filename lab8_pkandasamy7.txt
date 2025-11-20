@@ -1,0 +1,40 @@
+
+PLAY [vmlab] *******************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [vmlab]
+
+TASK [ensure apache is updated] ************************************************
+ok: [vmlab]
+
+TASK [install epel-release repo] ***********************************************
+ok: [vmlab]
+
+TASK [remove tree package] *****************************************************
+ok: [vmlab]
+
+TASK [set hostname] ************************************************************
+changed: [vmlab]
+
+TASK [create new user] *********************************************************
+changed: [vmlab]
+
+TASK [create .ssh directory] ***************************************************
+changed: [vmlab]
+
+TASK [copy authorized_keys for new user] ***************************************
+changed: [vmlab]
+
+TASK [create lab directories] **************************************************
+changed: [vmlab] => (item=1)
+changed: [vmlab] => (item=2)
+changed: [vmlab] => (item=3)
+changed: [vmlab] => (item=4)
+changed: [vmlab] => (item=5)
+changed: [vmlab] => (item=6)
+changed: [vmlab] => (item=7)
+changed: [vmlab] => (item=8)
+
+PLAY RECAP *********************************************************************
+vmlab                      : ok=9    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
